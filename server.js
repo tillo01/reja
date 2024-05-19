@@ -1,5 +1,8 @@
+// The zero one
+
 console.log("Web serverdi boshlash ");
-const express = require('express');
+const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -18,6 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // 2 Session
+
 // 3 views code
 app.set("views","views");
 app.set("view engine","ejs");
@@ -27,17 +31,16 @@ app.post("/create-item", (req,res)=>{
 console.log(req);
 res.json({test: "succes"});
 } )
-// app.get("/", function(req,res){
-//     res.render("harid");
-// } )
-app.get("/author",(req,res)=>{
+
+
+app.get('/author',(req,res)=>{
     res.render("author",{user: user});
 })
 
 
-// app.get("/", function (req,res) {
-//     res.render("harid");
-// });
+app.get("/", function (req,res) {
+    res.render("harid");
+});
 
 const server = http.createServer(app);
 let PORT = 3000;

@@ -4,10 +4,9 @@
   "description": "Bu bizning birinchi loyixamiz",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon trainn.js",
     "dev": "nodemon server.js",
     "trainn": "nodemon trainn.js",
-    "start":"nodemon trainn.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin",
@@ -16,6 +15,7 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "git": "^0.1.5",
+    "mongodb": "^3.2.6",
     "nodemon": "^3.1.0"
   }
 }

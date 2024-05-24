@@ -4,21 +4,50 @@
 // letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 // MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
-function countLetter(letter,word){
-    let count = 0;
-    letter = letter.toLowerCase();
-    word = word.toLowerCase();
+// function countLetter(letter,word){
+//     let count = 0;
+//     letter = letter.toLowerCase();
+//     word = word.toLowerCase();
 
-for (let char of word ) {
-  if(char === letter){
-        count++;
+// for (let char of word ) {
+//   if(char === letter){
+//         count++;
+//   }
+
+// }
+// return count;
+
+// }
+// console.log(countLetter("e", "apple"));
+
+
+// TASK - B
+
+function countDigits(a) {
+  let count = 0;
+  for (let i = 0; i < a.length; i++) {
+      if (/\d/.test(a[i])) {
+          count++;
+      }
   }
-
+  return count;
 }
-return count;
 
-}
-console.log(countLetter("e", "apple"));
+// Misol uchun:
+let result = countDigits("ad2a54y79w535fdfqfet0sfg58398394b9");
+console.log(result); 
+
+
+
+
+// 7 ni return qiladi
+//     count = sum(c.isdigit() for c in s)
+//     return count
+
+// # Misol uchun:
+// result = countDigits("ad2a54y79wet0sfgb9")
+// print(result)  # 7 ni return qiladi
+
 
 
 

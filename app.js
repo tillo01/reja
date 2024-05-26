@@ -33,12 +33,8 @@ app.post("/create-item", (req,res)=>{
 console.log(req.body);
 const new_idea = req.body.reja;
 db.collection("plans").insertOne( { reja: new_idea}, (err, data) =>{
-    if(err){
-        console.log(err);
-        res.end("something went wrong")
-    }else{
-        res.end("successfully added")
-    }
+    console.log(data.ops);
+   res.json(data.ops[0]);
 
 } );
 

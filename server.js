@@ -1,9 +1,10 @@
 const http = require("http");
 
+
 const mongodb = require ("mongodb");
 
 let db;
-const connectionString = "mongodb+srv://tillo15pro:K85KBEPmhY2gvFSi@cluster0.pzgsaez.mongodb.net/reja";
+const connectionString = "mongodb+srv://example:4ROohect0dIdKT13@cluster0.gudhgmq.mongodb.net/Reja";
 mongodb.connect (connectionString,
     {
     

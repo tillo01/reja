@@ -1,3 +1,56 @@
+
+// MIT TASK - D 
+
+// D-TASK: 
+
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir 
+// hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true
+
+function same(a, b) {
+  if (a.length !== b.length) {
+      return false;
+
+  } else {
+      return true;
+  }
+}
+console.log(same("word", "drow"));
+
+
+
+// TASK - B
+
+// Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+// MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+
+// function countDigits(a) {
+//   let count = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (/\d/.test(a[i])) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// // Misol uchun:
+// let result = countDigits("ad2a54y79w535fdfqfet0sfg58398394b9");
+// console.log(result); 
+
+
+
+
+// 7 ni return qiladi
+//     count = sum(c.isdigit() for c in s)
+//     return count
+
+// # Misol uchun:
+// result = countDigits("ad2a54y79wet0sfgb9")
+// print(result)  # 7 ni return qiladi
+
+
+
 //  == TASK = A 
 
 // Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi 
@@ -19,40 +72,6 @@
 
 // }
 // console.log(countLetter("e", "apple"));
-
-
-// TASK - B
-
-// Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
-// MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
-
-function countDigits(a) {
-  let count = 0;
-  for (let i = 0; i < a.length; i++) {
-      if (/\d/.test(a[i])) {
-          count++;
-      }
-  }
-  return count;
-}
-
-// Misol uchun:
-let result = countDigits("ad2a54y79w535fdfqfet0sfg58398394b9");
-console.log(result); 
-
-
-
-
-// 7 ni return qiladi
-//     count = sum(c.isdigit() for c in s)
-//     return count
-
-// # Misol uchun:
-// result = countDigits("ad2a54y79wet0sfgb9")
-// print(result)  # 7 ni return qiladi
-
-
-
 
 
 

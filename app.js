@@ -52,18 +52,25 @@ app.post ("/edit-item",  (req,res)=>{
     
 });
 
-app.post (" /delete-all", (req,res) =>{
+
+
+app.post("/delete-all", (req, res) => {
     if (req.body.delete_all) {
-        db.collection("plans") .deleteMany(function () {
-            res.json({state: "hamma rejalar ochirildi"});
+        db.collection("plans").deleteMany({}, (err, result) => {
+            if (err) {
+                res.status(500).json({ state: "error", message: "Rejalardi ochiraolmadi" });
+            } else {
+                res.json({ state: "hamma rejalar ochirildi" });
+            }
         });
+    } else {
+        res.status(400).json({ state: "error", message: "Notogri sorovnoma jonattingiz " });
     }
 });
 
 
-// app.get('/author',(req,res)=>{
-//     res.render("author",{user: user});
-// })
+
+
 
 
 app.get("/", function (req,res) {

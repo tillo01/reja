@@ -7,15 +7,25 @@
 // hil harflardan iborat bolsa true aks holda false qaytarsin
 // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true
 
-function same(a, b) {
+function sameWord(a, b) {
+
   if (a.length !== b.length) {
       return false;
-
-  } else {
-      return true;
   }
+
+  for (let i = 0; i < a.length; i++) {
+      if (a[i] === b[b.length - 1 - i]) {
+          return true;
+      }
+  }
+
+  return false;
 }
-console.log(same("word", "drow"));
+
+console.log(sameWord("kevin", "vinek"));
+console.log(sameWord("mitgroup", "puorgtmi"));
+console.log(sameWord("mitgroup", "hi"));
+
 
 
 

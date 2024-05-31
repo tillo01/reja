@@ -1,3 +1,23 @@
+// E-TASK: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+
+function isOpposite(str) {
+    let result = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        result += str[i];
+    }
+    return result;
+}
+
+
+console.log(isOpposite("hello"));
+console.log(isOpposite("world"));
+
+
+
 
 // MIT TASK - D 
 
@@ -7,24 +27,24 @@
 // hil harflardan iborat bolsa true aks holda false qaytarsin
 // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true
 
-function sameWord(a, b) {
+// function sameWord(a, b) {
 
-  if (a.length !== b.length) {
-      return false;
-  }
+//   if (a.length !== b.length) {
+//       return false;
+//   }
 
-  for (let i = 0; i < a.length; i++) {
-      if (a[i] === b[b.length - 1 - i]) {
-          return true;
-      }
-  }
+//   for (let i = 0; i < a.length; i++) {
+//       if (a[i] === b[b.length - 1 - i]) {
+//           return true;
+//       }
+//   }
 
-  return false;
-}
+//   return false;
+// }
 
-console.log(sameWord("kevin", "vinek"));
-console.log(sameWord("mitgroup", "puorgtmi"));
-console.log(sameWord("mitgroup", "hi"));
+// console.log(sameWord("kevin", "vinek"));
+// console.log(sameWord("mitgroup", "puorgtmi"));
+// console.log(sameWord("mitgroup", "hi"));
 
 
 

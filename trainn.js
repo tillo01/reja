@@ -1,20 +1,45 @@
 // E-TASK: 
 
+const { set } = require("./app");
+
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
 
-function isOpposite(str) {
-    let result = '';
-    for (let i = str.length - 1; i >= 0; i--) {
-        result += str[i];
+// function isOpposite(str) {
+//     let result = '';
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         result += str[i];
+//     }
+//     return result;
+// }
+
+
+// console.log(isOpposite("hello"));
+// console.log(isOpposite("world"));
+
+
+
+function getSameWorda(a) {
+   
+  const one = new set()
+
+
+    for (let i = 0; i < a.length; i++) {
+        let b =  a[i];  
+      
+     
+        if (a.has(b)) {
+            return true;
+        } 
+        one.add(b);
     }
-    return result;
+
+    return false;
+    
 }
 
-
-console.log(isOpposite("hello"));
-console.log(isOpposite("world"));
+console.log(getSameWorda ("hello"));
 
 
 
@@ -45,6 +70,7 @@ console.log(isOpposite("world"));
 // console.log(sameWord("kevin", "vinek"));
 // console.log(sameWord("mitgroup", "puorgtmi"));
 // console.log(sameWord("mitgroup", "hi"));
+
 
 
 

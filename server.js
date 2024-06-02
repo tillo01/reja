@@ -18,7 +18,7 @@ else{
     console.log("MongoDb connection sccessed");
     const app = require("./app")
     const server = http.createServer(app);
-    let PORT = 3000;
+    let PORT = 7004;
     server.listen(PORT, function(){
         console.log(`The server is running succsessfully on port: ${PORT}, http://localhost:${PORT} `);
     });

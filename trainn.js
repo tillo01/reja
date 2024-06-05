@@ -1,6 +1,6 @@
 // E-TASK: 
 
-const { set } = require("./app");
+// const { set } = require("./app");
 
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
@@ -19,27 +19,28 @@ const { set } = require("./app");
 // console.log(isOpposite("world"));
 
 
-
 function getSameWorda(a) {
    
-  const one = new set()
-
-
-    for (let i = 0; i < a.length; i++) {
-        let b =  a[i];  
+    const one = new Set()
+  
+  
+      for (let i = 0; i < a.length; i++) {
+          let b =  a[i];  
+        
+       
+          if (a.has(b)) {
+              return true;
+          } 
+          one.add(b);
+      }
+  
+      return false;
       
-     
-        if (a.has(b)) {
-            return true;
-        } 
-        one.add(b);
-    }
+  }
+  
+  console.log(getSameWorda ("hello"));
 
-    return false;
-    
-}
 
-console.log(getSameWorda ("hello"));
 
 
 
